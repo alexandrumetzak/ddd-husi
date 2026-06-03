@@ -1,0 +1,29 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Valterm Invest DDD">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#27b463"/>
+      <stop offset="1" stop-color="#157a40"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield -->
+  <path d="M100 12 L172 40 V104 C172 150 140 178 100 190 C60 178 28 150 28 104 V40 Z"
+        fill="url(#shieldGrad)"/>
+  <path d="M100 12 L172 40 V104 C172 150 140 178 100 190 C60 178 28 150 28 104 V40 Z"
+        fill="none" stroke="#0f5a2e" stroke-width="3" opacity="0.35"/>
+  <!-- Bug body -->
+  <ellipse cx="100" cy="108" rx="26" ry="34" fill="#ffffff"/>
+  <ellipse cx="100" cy="78" rx="15" ry="14" fill="#ffffff"/>
+  <line x1="100" y1="74" x2="100" y2="142" stroke="#157a40" stroke-width="4"/>
+  <!-- Antennae -->
+  <path d="M92 68 C84 58 80 56 74 52" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M108 68 C116 58 120 56 126 52" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <!-- Legs -->
+  <path d="M76 92 C62 86 56 84 48 86" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M124 92 C138 86 144 84 152 86" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M74 110 C60 110 54 112 47 116" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M126 110 C140 110 146 112 153 116" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M77 128 C64 132 59 136 53 142" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M123 128 C136 132 141 136 147 142" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <!-- Prohibition slash -->
+  <line x1="58" y1="150" x2="142" y2="62" stroke="#e23b3b" stroke-width="11" stroke-linecap="round"/>
+</svg>
