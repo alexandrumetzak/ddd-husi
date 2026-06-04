@@ -165,6 +165,156 @@ SERVICES = [
             ("Când pot reintra în spațiu?", "După perioada de aerisire indicată, de obicei 1–2 ore."),
         ],
     },
+    {
+        "slug": "combatere-furnici",
+        "name": "Combatere furnici",
+        "icon": "🐜",
+        "title": "Combatere furnici în Huși și Moldova | Scapă de furnici în casă",
+        "desc": "Servicii profesionale de combatere a furnicilor în locuințe, curți și firme. Tratament cu gel și pulverizare care elimină furnicarul. Huși și toată Moldova.",
+        "h1": "Combatere furnici — elimină furnicarul, nu doar furnicile vizibile",
+        "lead": "Furnicile apar în bucătărie, pe pervaze sau în curte și se înmulțesc rapid. Tratamentul nostru vizează colonia și regina, nu doar furnicile pe care le vezi.",
+        "sections": [
+            ("De ce nu ajută spray-urile obișnuite", [
+                "Spray-urile din comerț omoară doar furnicile vizibile, în timp ce colonia și regina rămân ascunse și produc constant noi furnici.",
+                "Folosim geluri și soluții pe care furnicile le duc în furnicar, eliminând colonia de la sursă.",
+            ]),
+            ("Cum lucrăm", [
+                "Identificăm traseele și locul probabil al cuibului.",
+                "Aplicăm gel insecticid pe traseele de acces.",
+                "Tratăm prin pulverizare punctele de intrare în locuință.",
+                "Recomandări pentru a preveni reapariția.",
+            ]),
+            ("Unde intervenim", [
+                "Locuințe, bucătării și cămări", "Curți, terase și grădini",
+                "Magazine și spații alimentare", "Depozite și firme",
+            ]),
+        ],
+        "faq": [
+            ("Scap definitiv de furnici?", "Da, prin eliminarea coloniei. Dacă apar din exterior (curte, vecini), recomandăm și un tratament preventiv periodic."),
+            ("E sigur pentru copii și animale?", "Da, aplicăm produse avizate, țintit, în locuri inaccesibile copiilor și animalelor."),
+            ("Tratați și furnicile de grădină?", "Da, tratăm atât furnicile din interior, cât și furnicarele din curte."),
+        ],
+    },
+    {
+        "slug": "combatere-muste",
+        "name": "Combatere muște",
+        "icon": "🪰",
+        "title": "Combatere muște în Huși și Moldova | Soluții pentru firme și locuințe",
+        "desc": "Tratamente împotriva muștelor pentru restaurante, ferme, depozite și locuințe. Pulverizare, capcane și soluții profesionale. Huși și toată Moldova.",
+        "h1": "Combatere muște — control eficient pentru spații curate",
+        "lead": "Muștele contaminează alimentele și transmit boli, fiind o problemă serioasă mai ales pentru restaurante, ferme și magazine alimentare. Oferim soluții profesionale de control.",
+        "sections": [
+            ("De ce e nevoie de control profesional", [
+                "Muștele se înmulțesc exploziv în jurul gunoaielor, resturilor alimentare și zonelor cu animale. O infestare scapă rapid de sub control.",
+                "Combinăm tratamentul cu pulverizare reziduală, capcane și recomandări de igienă pentru un efect de durată.",
+            ]),
+            ("Ce includem", [
+                "Pulverizare reziduală pe suprafețele de odihnă ale muștelor.",
+                "Montare de capcane și dispozitive (la cerere).",
+                "Tratament pentru zone exterioare și de depozitare a deșeurilor.",
+                "Plan de control pentru firme și ferme.",
+            ]),
+            ("Pentru cine", [
+                "Restaurante și bucătării profesionale", "Ferme și gospodării cu animale",
+                "Magazine și depozite alimentare", "Locuințe și curți",
+            ]),
+        ],
+        "faq": [
+            ("Cât de repede se văd rezultatele?", "Efectul este vizibil în câteva ore până la o zi după tratament."),
+            ("Oferiți soluții pentru restaurante?", "Da, cu plan de control periodic și documentație pentru HACCP."),
+            ("Tratamentul afectează alimentele?", "Nu, aplicăm țintit, cu respectarea normelor de siguranță alimentară."),
+        ],
+    },
+    {
+        "slug": "combatere-purici",
+        "name": "Combatere purici",
+        "icon": "🦟",
+        "title": "Combatere purici în Huși și Moldova | Tratament locuințe și curți",
+        "desc": "Eliminăm puricii din locuințe, curți și spații cu animale prin tratamente profesionale. Pulverizare reziduală sigură pentru familie. Huși și toată Moldova.",
+        "h1": "Combatere purici — scapă de înțepături în casă și curte",
+        "lead": "Puricii pătrund în casă prin animale de companie sau din curte și se înmulțesc în covoare, mochete și crăpături. Tratamentul profesional îi elimină complet, inclusiv larvele.",
+        "sections": [
+            ("De ce puricii revin după tratamente simple", [
+                "Doar o mică parte din populația de purici se află pe animale; restul (ouă, larve, pupe) este în mediu — covoare, paturi, fisuri.",
+                "Tratăm întreg mediul, vizând toate stadiile de dezvoltare, pentru a opri ciclul de înmulțire.",
+            ]),
+            ("Cum decurge intervenția", [
+                "Inspectăm zonele de risc (locurile preferate ale animalelor).",
+                "Aplicăm pulverizare reziduală pe pardoseli, covoare și crăpături.",
+                "Tratăm și curtea sau zonele exterioare, dacă e cazul.",
+                "Recomandări pentru tratarea animalelor la veterinar.",
+            ]),
+            ("Unde intervenim", [
+                "Apartamente și case", "Curți și grădini",
+                "Spații cu animale de companie", "Pensiuni și cazări",
+            ]),
+        ],
+        "faq": [
+            ("Trebuie să-mi tratez și animalul?", "Da, recomandăm tratarea animalelor la medicul veterinar, în paralel cu tratarea spațiului."),
+            ("Pot sta în casă în timpul tratamentului?", "Pe durata aplicării și a aerisirii, nu. Îți dăm toate instrucțiunile."),
+            ("E nevoie de o singură intervenție?", "De multe ori da, dar pentru infestări mari putem recomanda o revenire."),
+        ],
+    },
+    {
+        "slug": "combatere-capuse",
+        "name": "Combatere căpușe",
+        "icon": "🕷️",
+        "title": "Combatere căpușe în Huși și Moldova | Tratament curți și spații verzi",
+        "desc": "Tratamente împotriva căpușelor pentru curți, grădini, parcuri și spații verzi. Protejează familia și animalele de boli transmise de căpușe. Huși și toată Moldova.",
+        "h1": "Combatere căpușe — curte sigură pentru copii și animale",
+        "lead": "Căpușele transmit boli grave (boala Lyme, encefalită) și se ascund în iarbă și vegetație. Tratăm spațiile verzi pentru a reduce drastic riscul de înțepături.",
+        "sections": [
+            ("De ce e importantă combaterea căpușelor", [
+                "Căpușele se găsesc în iarba înaltă, tufișuri și zone umbrite, de unde se prind de oameni și animale.",
+                "Un tratament aplicat la începutul sezonului cald reduce considerabil populația și riscul de îmbolnăvire.",
+            ]),
+            ("Ce oferim", [
+                "Pulverizare pe gazon, vegetație și garduri vii.",
+                "Tratament pentru zone de joacă și locuri de relaxare.",
+                "Soluții pentru parcuri, incinte și spații verzi mari.",
+                "Recomandări pentru protejarea animalelor de companie.",
+            ]),
+            ("Locuri tratate", [
+                "Curți și grădini private", "Parcuri și spații verzi",
+                "Pensiuni, cazări și terenuri de eveniment", "Incinte de firme și instituții",
+            ]),
+        ],
+        "faq": [
+            ("Cât ține efectul tratamentului?", "În general câteva săptămâni; pentru sezonul cald recomandăm repetarea."),
+            ("Este periculos pentru animale?", "Aplicăm produse avizate; după uscare, curtea poate fi folosită în siguranță."),
+            ("Când e cel mai bun moment?", "Primăvara și la începutul verii, când căpușele devin active."),
+        ],
+    },
+    {
+        "slug": "combatere-viespi",
+        "name": "Combatere viespi",
+        "icon": "🐝",
+        "title": "Combatere viespi și gărgăuni Huși și Moldova | Îndepărtare cuiburi",
+        "desc": "Îndepărtăm cuiburile de viespi și gărgăuni în siguranță, din poduri, streașini, copaci și curți. Intervenție rapidă în Huși și toată Moldova.",
+        "h1": "Combatere viespi și gărgăuni — îndepărtarea cuiburilor în siguranță",
+        "lead": "Un cuib de viespi sau gărgăuni lângă casă este periculos, mai ales pentru copii și persoanele alergice. Îl îndepărtăm în siguranță, cu echipament de protecție profesional.",
+        "sections": [
+            ("De ce să nu încerci singur", [
+                "Viespile și gărgăunii devin agresivi când cuibul este deranjat, iar înțepăturile multiple pot fi periculoase, uneori chiar fatale pentru persoanele alergice.",
+                "Intervenim cu echipament de protecție și substanțe profesionale, neutralizând cuibul complet.",
+            ]),
+            ("Cum lucrăm", [
+                "Localizăm cuibul și evaluăm riscul.",
+                "Tratăm și neutralizăm cuibul în siguranță.",
+                "Îndepărtăm cuibul, acolo unde este posibil.",
+                "Recomandări pentru prevenirea revenirii.",
+            ]),
+            ("Unde intervenim", [
+                "Poduri, streașini și acoperișuri", "Copaci, garduri și curți",
+                "Balcoane și pereți exteriori", "Spații comerciale și instituții",
+            ]),
+        ],
+        "faq": [
+            ("Cât de repede puteți veni?", "Tratăm aceste situații cu prioritate, de multe ori chiar în aceeași zi, în funcție de zonă."),
+            ("Este periculos pentru cei din casă?", "Vă spunem exact cum să procedați în timpul intervenției pentru siguranța tuturor."),
+            ("Reveniți dacă apare alt cuib?", "Da, oferim recomandări preventive și putem reveni la nevoie."),
+        ],
+    },
 ]
 
 # ----------------------------------------------------------------------------
@@ -193,6 +343,32 @@ CITIES = [
      "ctx": "Oferim servicii DDD în Botoșani pentru locuințe, instituții și unități comerciale."},
     {"slug": "suceava", "name": "Suceava", "judet": "Suceava",
      "ctx": "Ne deplasăm în Suceava și zona Bucovinei pentru intervenții de dezinsecție, deratizare și dezinfecție."},
+    {"slug": "pascani", "name": "Pașcani", "judet": "Iași",
+     "ctx": "Oferim servicii DDD în Pașcani pentru locuințe, blocuri, firme și spații comerciale."},
+    {"slug": "negresti", "name": "Negrești", "judet": "Vaslui",
+     "ctx": "Fiind aproape de baza noastră din Huși, ajungem rapid în Negrești și satele din jur."},
+    {"slug": "tecuci", "name": "Tecuci", "judet": "Galați",
+     "ctx": "Intervenim în Tecuci și împrejurimi pentru persoane fizice și firme."},
+    {"slug": "adjud", "name": "Adjud", "judet": "Vrancea",
+     "ctx": "Deservim Adjud și zona de nord a județului Vrancea pentru tratamente DDD complete."},
+    {"slug": "onesti", "name": "Onești", "judet": "Bacău",
+     "ctx": "Oferim servicii de dezinsecție, deratizare și dezinfecție în Onești și localitățile vecine."},
+    {"slug": "comanesti", "name": "Comănești", "judet": "Bacău",
+     "ctx": "Ne deplasăm în Comănești și valea Trotușului pentru intervenții împotriva dăunătorilor."},
+    {"slug": "moinesti", "name": "Moinești", "judet": "Bacău",
+     "ctx": "Intervenim în Moinești pentru locuințe, firme și instituții, cu programări flexibile."},
+    {"slug": "targu-neamt", "name": "Târgu Neamț", "judet": "Neamț",
+     "ctx": "Oferim servicii DDD în Târgu Neamț și zona Cetății, pentru clienți rezidențiali și firme."},
+    {"slug": "falticeni", "name": "Fălticeni", "judet": "Suceava",
+     "ctx": "Ne deplasăm în Fălticeni și împrejurimi pentru dezinsecție, deratizare și dezinfecție."},
+    {"slug": "radauti", "name": "Rădăuți", "judet": "Suceava",
+     "ctx": "Deservim Rădăuți și nordul Bucovinei pentru tratamente profesionale împotriva dăunătorilor."},
+    {"slug": "dorohoi", "name": "Dorohoi", "judet": "Botoșani",
+     "ctx": "Oferim servicii DDD în Dorohoi pentru locuințe, firme și spații comerciale."},
+    {"slug": "targu-frumos", "name": "Târgu Frumos", "judet": "Iași",
+     "ctx": "Intervenim în Târgu Frumos și satele din jur, atât pentru persoane fizice, cât și pentru firme."},
+    {"slug": "harlau", "name": "Hârlău", "judet": "Iași",
+     "ctx": "Ne deplasăm în Hârlău și împrejurimi pentru intervenții de dezinsecție, deratizare și dezinfecție."},
 ]
 
 # ----------------------------------------------------------------------------
@@ -347,7 +523,7 @@ def related_html(current_slug, kind):
         if kind == "service" and s["slug"] == current_slug:
             continue
         links.append((f'../servicii/{s["slug"]}.html', f'{s["icon"]} {s["name"]}'))
-    for c in CITIES[:8]:
+    for c in CITIES:
         if kind == "city" and c["slug"] == current_slug:
             continue
         links.append((f'../zone/{c["slug"]}.html', f'📍 DDD {c["name"]}'))
