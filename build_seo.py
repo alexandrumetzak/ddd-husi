@@ -5,7 +5,7 @@
 
 import os, html
 
-BASE_URL = "https://alexandrumetzak.github.io/ddd-husi"
+BASE_URL = "https://ddd-husi.ro"
 PHONE_DISPLAY = "0744 913 376"
 PHONE_TEL = "+40744913376"
 WA = "40744913376"
