@@ -3,9 +3,11 @@
 """Generează paginile SEO (servicii + orașe), sitemap.xml și robots.txt
    pentru site-ul Valterm Invest (DDD Huși)."""
 
-import os, html
+import os, html, datetime
 
 BASE_URL = "https://ddd-husi.ro"
+OG_IMAGE = BASE_URL + "/assets/og-image.png"
+TODAY = datetime.date.today().isoformat()
 PHONE_DISPLAY = "0744 913 376"
 PHONE_TEL = "+40744913376"
 WA = "40744913376"
@@ -372,6 +374,122 @@ CITIES = [
 ]
 
 # ----------------------------------------------------------------------------
+# DATE: ARTICOLE (resurse / blog) — pentru SEO informativ și AEO
+# ----------------------------------------------------------------------------
+ARTICLES = [
+    {
+        "slug": "cum-scapi-de-gandaci",
+        "title": "Cum scapi definitiv de gândaci în casă — ghid complet 2026",
+        "desc": "Ghid practic: de ce apar gândacii, ce funcționează cu adevărat și când e nevoie de o firmă de dezinsecție. Sfaturi de la profesioniști DDD.",
+        "h1": "Cum scapi definitiv de gândaci în casă",
+        "intro": "Gândacii de bucătărie sunt printre cei mai persistenți dăunători din locuințe. Apar peste noapte, se ascund în spatele electrocasnicelor și revin oricât de des ai curăța. În acest ghid îți explicăm de ce apar, ce poți face singur și când merită să chemi o firmă specializată.",
+        "sections": [
+            ("De ce apar gândacii în casă?", [
+                "Gândacii caută trei lucruri: căldură, umezeală și hrană. Bucătăria și baia le oferă pe toate. Ei pot pătrunde prin canalizare, prin fisuri, prin ambalaje aduse din magazin sau dintr-un apartament vecin infestat.",
+                "Important de știut: prezența gândacilor nu înseamnă neapărat lipsă de igienă. Chiar și în case curate pot apărea dacă există o sursă în bloc sau în vecinătate.",
+            ]),
+            ("Ce poți face singur", [
+                "Elimină sursele de apă și hrană: șterge firimiturile, nu lăsa vase nespălate, repară robinetele care picură.",
+                "Astupă fisurile și spațiile din spatele plintelor și din jurul țevilor.",
+                "Folosește capcane adezive pentru a estima amploarea problemei.",
+            ]),
+            ("De ce metodele din comerț nu sunt suficiente", [
+                "Spray-urile din comerț omoară gândacii vizibili, dar nu ajung la cuib și nu afectează ouăle. O singură femelă poate produce sute de urmași, așa că infestarea revine rapid.",
+                "Tratamentele profesionale folosesc geluri și substanțe reziduale pe care gândacii le duc în ascunzișuri, eliminând și colonia, și generația următoare.",
+            ]),
+            ("Când să chemi o firmă de dezinsecție", [
+                "Dacă vezi gândaci ziua (semn de infestare mare), dacă revin după tratamentele tale sau dacă locuiești la bloc, o firmă specializată rezolvă problema de durată, cu garanție.",
+            ]),
+        ],
+        "cta_service": ("combatere-gandaci", "Vezi serviciul de combatere gândaci"),
+        "faq": [
+            ("Cât durează să scap complet de gândaci?", "Cu un tratament profesional, vezi o scădere mare în prima săptămână și eliminare completă în 2–3 săptămâni, pe măsură ce sunt afectate și ouăle."),
+            ("Gândacii înseamnă că am casa murdară?", "Nu neapărat. Pot apărea și în case curate, mai ales la bloc, dacă există o sursă în vecinătate."),
+        ],
+    },
+    {
+        "slug": "cat-costa-deratizarea",
+        "title": "Cât costă o deratizare? Ghid de prețuri 2026",
+        "desc": "De ce variază prețul unei deratizări, ce influențează costul și cum obții o ofertă corectă pentru locuință sau firmă. Explicat de specialiști DDD.",
+        "h1": "Cât costă o deratizare? La ce să te aștepți",
+        "intro": "Una dintre primele întrebări când apar șoareci sau șobolani este „cât costă să scap de ei?”. Răspunsul corect este: depinde. În acest articol îți explicăm ce influențează prețul unei deratizări, ca să știi la ce să te aștepți și cum eviți surprizele.",
+        "sections": [
+            ("Ce influențează prețul unei deratizări", [
+                "Mărimea spațiului — un apartament costă mai puțin decât un depozit sau o hală.",
+                "Gradul de infestare — o problemă incipientă se rezolvă mai ușor decât o infestare avansată.",
+                "Tipul spațiului — casele cu curte, firmele alimentare sau spațiile cu cerințe HACCP necesită soluții specifice.",
+                "Numărul de intervenții — uneori e nevoie de o revenire de control sau de un plan de monitorizare.",
+            ]),
+            ("De ce nu există un preț fix afișat", [
+                "O firmă serioasă nu îți dă un preț final fără să știe situația, pentru că ar fi fie prea mare, fie nereal de mic. De aceea oferim o evaluare și o ofertă gratuită, adaptată cazului tău.",
+            ]),
+            ("Cum obții o ofertă corectă", [
+                "Descrie cât mai exact problema (ce ai văzut, de când, în ce spațiu).",
+                "Cere o ofertă clară, care include eventualele reveniri.",
+                "Verifică dacă firma folosește substanțe avizate și oferă documente (important pentru firme).",
+            ]),
+        ],
+        "cta_service": ("combatere-soareci-sobolani", "Vezi serviciul de deratizare"),
+        "faq": [
+            ("Deratizarea se face o singură dată?", "Pentru locuințe, de obicei o intervenție cu o revenire de control. Firmele au nevoie de un plan periodic de monitorizare."),
+            ("Cum primesc un preț?", "Sună-ne sau scrie-ne pe WhatsApp cu detaliile spațiului și îți dăm o ofertă gratuită, fără obligații."),
+        ],
+    },
+    {
+        "slug": "cum-recunosti-plosnitele",
+        "title": "Cum recunoști ploșnițele de pat și cum scapi de ele",
+        "desc": "Semnele clare ale unei infestări cu ploșnițe, unde se ascund și de ce tratamentul profesional este singura soluție de durată.",
+        "h1": "Cum recunoști ploșnițele de pat și cum scapi de ele",
+        "intro": "Ploșnițele de pat sunt printre cei mai neplăcuți dăunători: se ascund bine, sunt active noaptea și se înmulțesc rapid. Recunoașterea timpurie face diferența. Iată semnele la care să fii atent și ce poți face.",
+        "sections": [
+            ("Semnele unei infestări cu ploșnițe", [
+                "Înțepături în șir sau grupate, pe zonele expuse în timpul somnului (brațe, gât, picioare).",
+                "Pete mici, închise la culoare, pe așternuturi sau saltea (excremente).",
+                "Pete de sânge pe cearșafuri și un miros dulceag, neplăcut, la infestări mari.",
+                "Ploșnițe vii sau pielițe lăsate în urmă, în cusăturile saltelei și ale tăbliei.",
+            ]),
+            ("Unde se ascund", [
+                "În cusăturile saltelei și ale tăbliei de pat, în plinte, prize, rame de tablouri și mobilier, oriunde aproape de locul unde dormi.",
+            ]),
+            ("De ce tratamentul profesional este necesar", [
+                "Ploșnițele rezistă la multe soluții din comerț și se ascund în locuri greu accesibile. Un tratament profesional ajunge în toate ascunzișurile și tratează și ouăle, prevenind reinfestarea. La nevoie folosim și tratament termic.",
+            ]),
+        ],
+        "cta_service": ("combatere-plosnite", "Vezi serviciul de combatere ploșnițe"),
+        "faq": [
+            ("Trebuie să arunc salteaua?", "În cele mai multe cazuri, nu. Tratamentul profesional salvează mobilierul."),
+            ("Ploșnițele transmit boli?", "Nu sunt cunoscute ca transmițătoare de boli, dar înțepăturile pot provoca mâncărimi, reacții alergice și un disconfort major."),
+        ],
+    },
+    {
+        "slug": "ddd-restaurant-haccp",
+        "title": "DDD pentru restaurante: ce cere HACCP și de ce contează",
+        "desc": "Ghid pentru restaurante și HoReCa: ce presupune un contract DDD, ce documente cere HACCP/DSV și cum eviți amenzile la control.",
+        "h1": "DDD pentru restaurante: ce cere HACCP",
+        "intro": "Pentru orice restaurant, magazin alimentar sau unitate HoReCa, serviciile DDD nu sunt opționale — sunt o cerință legală și o condiție pentru a trece controalele DSV. Iată ce trebuie să știi.",
+        "sections": [
+            ("De ce au restaurantele nevoie de DDD", [
+                "Prezența dăunătorilor într-un spațiu alimentar înseamnă risc de contaminare, amenzi și chiar închiderea unității. Un program DDD constant previne aceste probleme.",
+            ]),
+            ("Ce documente cere HACCP / DSV", [
+                "Contract DDD cu o firmă autorizată.",
+                "Grafic și procese-verbale ale intervențiilor.",
+                "Fișe tehnice și avize pentru substanțele folosite.",
+                "Hărți de amplasare a stațiilor de deratizare.",
+            ]),
+            ("Cum funcționează un contract DDD pentru firme", [
+                "Stabilim un plan de intervenții periodice (lunar sau trimestrial), amplasăm stații de monitorizare securizate și îți furnizăm toată documentația necesară pentru controale.",
+            ]),
+        ],
+        "cta_service": ("dezinfectie-spatii", "Vezi serviciile pentru firme"),
+        "faq": [
+            ("Cât de des trebuie făcut DDD într-un restaurant?", "Recomandarea uzuală este lunar sau trimestrial, în funcție de specific, plus intervenții la nevoie."),
+            ("Primesc documente pentru control?", "Da. Oferim toate documentele cerute de HACCP și DSV: contract, procese-verbale, fișe tehnice și hărți de amplasare."),
+        ],
+    },
+]
+
+# ----------------------------------------------------------------------------
 # TEMPLATE
 # ----------------------------------------------------------------------------
 def head(title, desc, canonical, schema):
@@ -385,17 +503,19 @@ def head(title, desc, canonical, schema):
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="{canonical}" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="{canonical}" />
   <meta property="og:title" content="{html.escape(title)}" />
   <meta property="og:description" content="{html.escape(desc)}" />
   <meta property="og:locale" content="ro_RO" />
+  <meta property="og:image" content="{OG_IMAGE}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="{OG_IMAGE}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/styles.css" />
   <link rel="icon" type="image/svg+xml" href="../assets/logo.svg" />
-  <script type="application/ld+json">
-{schema}
-  </script>
+  {('<script type="application/ld+json">' + chr(10) + schema + chr(10) + '  </script>') if schema else ''}
 </head>
 <body>"""
 
@@ -504,7 +624,28 @@ def breadcrumb_schema(items):
 
 def join_schemas(*schemas):
     sep = "\n  </script>\n  <script type=\"application/ld+json\">\n"
-    return sep.join(schemas)
+    return sep.join(s for s in schemas if s)
+
+def howto_schema(name, steps):
+    st = ",".join(
+        '{"@type":"HowToStep","position":%d,"name":"%s","text":"%s"}'
+        % (i + 1, s.replace('"', "'")[:60], s.replace('"', "'")) for i, s in enumerate(steps))
+    return ('{"@context":"https://schema.org","@type":"HowTo","name":"%s","step":[%s]}'
+            % (name.replace('"', "'"), st))
+
+def process_steps(sections):
+    """Întoarce pașii dintr-o secțiune de tip 'Cum lucrăm/decurge', dacă există."""
+    for title, items in sections:
+        t = title.lower()
+        if t.startswith("cum") or "metod" in t or t.startswith("ce includem"):
+            return title, items
+    return None, None
+
+# FAQ comun adăugat pe fiecare pagină (preț + programare) — important pentru AEO
+PRICE_FAQ = [
+    ("Cât costă serviciul?", "Prețul depinde de mărimea spațiului și de gradul infestării. Îți oferim o evaluare și o ofertă gratuită, cu un preț corect și fără costuri ascunse. Sună la " + PHONE_DISPLAY + "."),
+    ("Cât de repede puteți veni?", "De multe ori intervenim chiar în aceeași zi sau a doua zi, în funcție de zonă și de programul nostru."),
+]
 
 def service_schema(s, canonical):
     return ('{"@context":"https://schema.org","@type":"Service",'
@@ -537,6 +678,10 @@ def related_html(current_slug, kind):
         if kind == "city" and c["slug"] == current_slug:
             continue
         links.append((f'../zone/{c["slug"]}.html', f'📍 DDD {c["name"]}'))
+    for a in ARTICLES:
+        if kind == "article" and a["slug"] == current_slug:
+            continue
+        links.append((f'../resurse/{a["slug"]}.html', f'📖 {a["h1"]}'))
     cells = "\n".join(f'        <a href="{u}">{html.escape(t)}</a>' for u, t in links)
     return f"""
   <section class="related">
@@ -553,8 +698,11 @@ def related_html(current_slug, kind):
 # ----------------------------------------------------------------------------
 def build_service(s):
     canonical = f"{BASE_URL}/servicii/{s['slug']}.html"
+    faqs = s["faq"] + PRICE_FAQ
     crumb = breadcrumb_schema([("Acasă", f"{BASE_URL}/"), ("Servicii", f"{BASE_URL}/#servicii"), (s["name"], canonical)])
-    schema = join_schemas(service_schema(s, canonical), faq_schema(s["faq"]), crumb)
+    p_title, p_steps = process_steps(s["sections"])
+    howto = howto_schema(f"{s['name']} — cum decurge", p_steps) if p_steps and all(len(i) < 120 for i in p_steps) else ""
+    schema = join_schemas(service_schema(s, canonical), faq_schema(faqs), howto, crumb)
     page = head(s["title"], s["desc"], canonical, schema)
     page += header_html()
     page += f"""
@@ -573,7 +721,7 @@ def build_service(s):
     <div class="container lp-grid">
       <div class="prose">
 {prose_sections(s['sections'])}
-{faq_html(s['faq'])}
+{faq_html(faqs)}
       </div>
 {aside_html('Spune-ne pe scurt ce problemă ai.')}
     </div>
@@ -595,7 +743,7 @@ def build_city(c):
         (f"Ajungeți în {c['name']}?", f"Da. {c['ctx']} Sună-ne pentru a stabili o programare."),
         ("Ce servicii oferiți?", "Dezinsecție (gândaci, ploșnițe, țânțari), deratizare (șoareci, șobolani) și dezinfecție profesională."),
         ("Lucrați și cu firme?", "Da, avem contracte și documentație completă pentru HACCP și DSV, pentru restaurante, magazine, depozite și instituții."),
-    ]
+    ] + PRICE_FAQ
     schema = ('{"@context":"https://schema.org","@type":"PestControlService","name":"Valterm Invest SRL – DDD %s",'
               '"telephone":"%s","areaServed":"%s, România",'
               '"address":{"@type":"PostalAddress","addressLocality":"Huși","addressRegion":"Vaslui","addressCountry":"RO"},'
@@ -649,16 +797,88 @@ def build_city(c):
         f.write(page)
     return canonical
 
+def build_article(a):
+    canonical = f"{BASE_URL}/resurse/{a['slug']}.html"
+    svc_slug, svc_label = a["cta_service"]
+    article_schema = ('{"@context":"https://schema.org","@type":"Article","headline":"%s",'
+                      '"description":"%s","author":{"@type":"Organization","name":"Valterm Invest SRL"},'
+                      '"publisher":{"@type":"Organization","name":"Valterm Invest SRL","logo":{"@type":"ImageObject","url":"%s"}},'
+                      '"image":"%s","mainEntityOfPage":"%s"}'
+                      % (a["title"].replace('"', "'"), a["desc"].replace('"', "'"),
+                         BASE_URL + "/assets/logo.svg", OG_IMAGE, canonical))
+    crumb = breadcrumb_schema([("Acasă", f"{BASE_URL}/"), ("Resurse", f"{BASE_URL}/resurse/"), (a["h1"], canonical)])
+    schema = join_schemas(article_schema, faq_schema(a["faq"]), crumb)
+    page = head(a["title"], a["desc"], canonical, schema)
+    page += header_html()
+    page += f"""
+  <section class="lp-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Acasă</a><span>›</span> Resurse <span>›</span> {html.escape(a['h1'])}</div>
+      <h1>{html.escape(a['h1'])}</h1>
+      <p class="lp-lead">{html.escape(a['intro'])}</p>
+    </div>
+  </section>
+  <section class="lp-body">
+    <div class="container lp-grid">
+      <div class="prose">
+{prose_sections(a['sections'])}
+      <h2>Ai nevoie de ajutor profesionist?</h2>
+      <p>Dacă problema persistă sau vrei să fii sigur că dispare definitiv, echipa noastră intervine rapid în Huși și toată Moldova, cu garanție. <a href="../servicii/{svc_slug}.html">{html.escape(svc_label)}</a> sau sună la <a href="tel:{PHONE_TEL}">{PHONE_DISPLAY}</a>.</p>
+{faq_html(a['faq'])}
+      </div>
+{aside_html('Spune-ne pe scurt ce problemă ai.')}
+    </div>
+  </section>"""
+    page += related_html(a["slug"], "article")
+    page += footer_html()
+    path = os.path.join(ROOT, "resurse", f"{a['slug']}.html")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(page)
+    return canonical
+
+def build_404():
+    page = head("Pagina nu a fost găsită | Valterm Invest", "Pagina căutată nu există. Întoarce-te la pagina principală sau contactează-ne.", f"{BASE_URL}/404.html", "")
+    # Pagina 404 e la rădăcină => căile relative trebuie să fie fără "../"
+    page = page.replace('href="../', 'href="').replace('src="../', 'src="')
+    body = f"""
+  <header class="site-header" id="top">
+    <div class="container nav-inner">
+      <a href="/" class="brand">
+        <img src="/assets/logo.svg" alt="Valterm Invest" class="brand-mark" />
+        <span class="brand-text"><strong>Valterm Invest</strong><small>Dezinsecție · Deratizare · Dezinfecție</small></span>
+      </a>
+    </div>
+  </header>
+  <section class="lp-hero" style="text-align:center;padding:90px 0;">
+    <div class="container">
+      <h1 style="margin:0 auto;">404 — Pagina nu a fost găsită</h1>
+      <p class="lp-lead" style="margin:18px auto 28px;">Ne pare rău, pagina căutată nu există sau a fost mutată.</p>
+      <div class="lp-actions" style="justify-content:center;">
+        <a href="/" class="btn btn-primary">Mergi la pagina principală</a>
+        <a href="tel:{PHONE_TEL}" class="btn btn-ghost">📞 {PHONE_DISPLAY}</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>"""
+    with open(os.path.join(ROOT, "404.html"), "w", encoding="utf-8") as f:
+        f.write(page + body)
+
 def main():
     urls = [f"{BASE_URL}/"]
     for s in SERVICES:
         urls.append(build_service(s))
     for c in CITIES:
         urls.append(build_city(c))
+    for a in ARTICLES:
+        urls.append(build_article(a))
+    build_404()
 
-    # sitemap.xml
+    # sitemap.xml (cu lastmod)
     entries = "\n".join(
-        f"  <url><loc>{u}</loc><changefreq>monthly</changefreq><priority>{'1.0' if u.endswith('/') else '0.8'}</priority></url>"
+        f"  <url><loc>{u}</loc><lastmod>{TODAY}</lastmod><changefreq>monthly</changefreq>"
+        f"<priority>{'1.0' if u.endswith('/') else '0.8'}</priority></url>"
         for u in urls)
     sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -677,7 +897,7 @@ Sitemap: {BASE_URL}/sitemap.xml
     with open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8") as f:
         f.write(robots)
 
-    print(f"Generate: {len(SERVICES)} servicii, {len(CITIES)} orașe, sitemap cu {len(urls)} URL-uri.")
+    print(f"Generate: {len(SERVICES)} servicii, {len(CITIES)} orașe, {len(ARTICLES)} articole, sitemap cu {len(urls)} URL-uri.")
 
 if __name__ == "__main__":
     main()

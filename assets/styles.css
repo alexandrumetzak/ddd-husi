@@ -239,6 +239,8 @@ img.brand-mark { display: block; }
 .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
 .related-grid a { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; font-weight: 500; font-size: .95rem; transition: border .2s, transform .15s; display: flex; align-items: center; gap: 8px; }
 .related-grid a:hover { border-color: var(--green); transform: translateY(-2px); color: var(--green-dark); }
+.links-title { font-size: 1.05rem; margin: 26px 0 12px; color: var(--ink); }
+.links-title:first-of-type { margin-top: 8px; }
 @media (max-width: 860px) { .lp-grid { grid-template-columns: 1fr; } .lp-aside { position: static; } }
 
 /* ===== FLOATING ACTIONS ===== */
