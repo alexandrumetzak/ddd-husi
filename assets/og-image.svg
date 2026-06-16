@@ -1,0 +1,34 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eafaf0"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="sh" x1="0" y1="0" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#27b463"/>
+      <stop offset="1" stop-color="#157a40"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="14" fill="#1f9d55"/>
+  <!-- Logo shield -->
+  <g transform="translate(90,150) scale(1.5)">
+    <path d="M100 12 L172 40 V104 C172 150 140 178 100 190 C60 178 28 150 28 104 V40 Z" fill="url(#sh)"/>
+    <ellipse cx="100" cy="108" rx="26" ry="34" fill="#fff"/>
+    <ellipse cx="100" cy="78" rx="15" ry="14" fill="#fff"/>
+    <line x1="100" y1="74" x2="100" y2="142" stroke="#157a40" stroke-width="4"/>
+    <path d="M76 92 C62 86 56 84 48 86" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M124 92 C138 86 144 84 152 86" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M74 110 C60 110 54 112 47 116" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M126 110 C140 110 146 112 153 116" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <line x1="58" y1="150" x2="142" y2="62" stroke="#e23b3b" stroke-width="11" stroke-linecap="round"/>
+  </g>
+  <!-- Text -->
+  <text x="480" y="235" font-family="Poppins, Arial, sans-serif" font-size="64" font-weight="800" fill="#0f2417">Valterm Invest</text>
+  <text x="482" y="300" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="600" fill="#1f9d55" letter-spacing="2">DEZINSECȚIE · DERATIZARE · DEZINFECȚIE</text>
+  <text x="482" y="375" font-family="Inter, Arial, sans-serif" font-size="30" fill="#46584d">Scapă definitiv de dăunători în Huși</text>
+  <text x="482" y="415" font-family="Inter, Arial, sans-serif" font-size="30" fill="#46584d">și toată regiunea Moldovei.</text>
+  <!-- Phone pill -->
+  <rect x="482" y="460" width="430" height="74" rx="37" fill="#1f9d55"/>
+  <text x="697" y="508" font-family="Poppins, Arial, sans-serif" font-size="34" font-weight="700" fill="#fff" text-anchor="middle">📞 0744 913 376</text>
+</svg>

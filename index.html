@@ -16,6 +16,8 @@
   <meta property="og:title" content="Servicii DDD Huși – Dezinsecție, Deratizare, Dezinfecție în toată Moldova" />
   <meta property="og:description" content="Scapă definitiv de dăunători. Intervenție rapidă în Huși și toată Moldova. Substanțe avizate, garanție și discreție." />
   <meta property="og:locale" content="ro_RO" />
+  <meta property="og:image" content="https://ddd-husi.ro/assets/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,8 +30,11 @@
   {
     "@context": "https://schema.org",
     "@type": "PestControlService",
+    "@id": "https://ddd-husi.ro/#business",
     "name": "Valterm Invest SRL – Dezinsecție Deratizare Dezinfecție Huși",
-    "image": "",
+    "url": "https://ddd-husi.ro/",
+    "image": "https://ddd-husi.ro/assets/logo.svg",
+    "logo": "https://ddd-husi.ro/assets/logo.svg",
     "description": "Servicii profesionale de dezinsecție, deratizare și dezinfecție în Huși și toată regiunea Moldovei.",
     "address": {
       "@type": "PostalAddress",
@@ -37,10 +42,56 @@
       "addressRegion": "Vaslui",
       "addressCountry": "RO"
     },
-    "areaServed": "Moldova, România",
-    "telephone": "+40-744-913-376",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 46.6758,
+      "longitude": 28.0608
+    },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Vaslui" },
+      { "@type": "AdministrativeArea", "name": "Iași" },
+      { "@type": "AdministrativeArea", "name": "Bacău" },
+      { "@type": "AdministrativeArea", "name": "Neamț" },
+      { "@type": "AdministrativeArea", "name": "Galați" },
+      { "@type": "AdministrativeArea", "name": "Vrancea" },
+      { "@type": "AdministrativeArea", "name": "Botoșani" },
+      { "@type": "AdministrativeArea", "name": "Suceava" }
+    ],
+    "telephone": "+40744913376",
     "priceRange": "$$",
-    "openingHours": "Mo-Su 08:00-20:00"
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100064242365233"
+    ],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:00",
+      "closes": "20:00"
+    }],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicii DDD",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dezinsecție" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deratizare" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dezinfecție" } }
+      ]
+    }
+  }
+  </script>
+  <!-- SEO/AEO: FAQ structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Substanțele sunt periculoase pentru copii sau animale?", "acceptedAnswer": { "@type": "Answer", "text": "Folosim doar substanțe avizate de Ministerul Sănătății. După tratament îți spunem exact când poți reintra în siguranță în spațiu." } },
+      { "@type": "Question", "name": "Cât durează o intervenție?", "acceptedAnswer": { "@type": "Answer", "text": "În general între 30 de minute și 2 ore, în funcție de mărimea spațiului și de tipul problemei." } },
+      { "@type": "Question", "name": "Trebuie să plec din casă în timpul tratamentului?", "acceptedAnswer": { "@type": "Answer", "text": "De obicei pentru câteva ore. Îți dăm toate instrucțiunile înainte și după intervenție." } },
+      { "@type": "Question", "name": "Oferiți garanție?", "acceptedAnswer": { "@type": "Answer", "text": "Da. Pentru majoritatea lucrărilor oferim garanție și revenim dacă problema persistă." } },
+      { "@type": "Question", "name": "Lucrați și cu firme?", "acceptedAnswer": { "@type": "Answer", "text": "Da. Avem soluții pentru restaurante, magazine, depozite și instituții, inclusiv documentație pentru HACCP și DSV." } },
+      { "@type": "Question", "name": "În cât timp puteți veni?", "acceptedAnswer": { "@type": "Answer", "text": "De multe ori chiar în aceeași zi sau a doua zi, în funcție de zonă și de program." } }
+    ]
   }
   </script>
 </head>

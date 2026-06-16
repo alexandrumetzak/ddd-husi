@@ -496,6 +496,16 @@ def faq_schema(faqs):
         % (q.replace('"', "'"), a.replace('"', "'")) for q, a in faqs)
     return '{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[%s]}' % q
 
+def breadcrumb_schema(items):
+    li = ",".join(
+        '{"@type":"ListItem","position":%d,"name":"%s","item":"%s"}'
+        % (i + 1, name.replace('"', "'"), url) for i, (name, url) in enumerate(items))
+    return '{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[%s]}' % li
+
+def join_schemas(*schemas):
+    sep = "\n  </script>\n  <script type=\"application/ld+json\">\n"
+    return sep.join(schemas)
+
 def service_schema(s, canonical):
     return ('{"@context":"https://schema.org","@type":"Service",'
             '"serviceType":"%s","provider":{"@type":"PestControlService","name":"Valterm Invest SRL",'
@@ -543,7 +553,8 @@ def related_html(current_slug, kind):
 # ----------------------------------------------------------------------------
 def build_service(s):
     canonical = f"{BASE_URL}/servicii/{s['slug']}.html"
-    schema = service_schema(s, canonical) + "\n  </script>\n  <script type=\"application/ld+json\">\n" + faq_schema(s["faq"])
+    crumb = breadcrumb_schema([("Acasă", f"{BASE_URL}/"), ("Servicii", f"{BASE_URL}/#servicii"), (s["name"], canonical)])
+    schema = join_schemas(service_schema(s, canonical), faq_schema(s["faq"]), crumb)
     page = head(s["title"], s["desc"], canonical, schema)
     page += header_html()
     page += f"""
@@ -589,7 +600,8 @@ def build_city(c):
               '"telephone":"%s","areaServed":"%s, România",'
               '"address":{"@type":"PostalAddress","addressLocality":"Huși","addressRegion":"Vaslui","addressCountry":"RO"},'
               '"url":"%s"}' % (c['name'], PHONE_TEL, c['name'], canonical))
-    schema += "\n  </script>\n  <script type=\"application/ld+json\">\n" + faq_schema(faqs)
+    crumb = breadcrumb_schema([("Acasă", f"{BASE_URL}/"), ("Zone", f"{BASE_URL}/#zona"), (c["name"], canonical)])
+    schema = join_schemas(schema, faq_schema(faqs), crumb)
     page = head(title, desc, canonical, schema)
     page += header_html()
     page += f"""
@@ -638,7 +650,7 @@ def build_city(c):
     return canonical
 
 def main():
-    urls = [f"{BASE_URL}/", f"{BASE_URL}/index.html"]
+    urls = [f"{BASE_URL}/"]
     for s in SERVICES:
         urls.append(build_service(s))
     for c in CITIES:
