@@ -200,7 +200,7 @@ img.brand-mark { display: block; }
 
 /* ===== FOOTER ===== */
 .site-footer { background: var(--bg-dark); color: #b9c8bf; }
-.footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1.3fr; gap: 36px; padding: 56px 20px 40px; }
+.footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1.3fr 1.3fr; gap: 36px; padding: 56px 20px 40px; }
 .footer-brand .brand-mark { width: 48px; height: 48px; }
 .footer-brand strong { color: #fff; font-family: 'Poppins'; font-size: 1.2rem; display: inline-block; margin: 8px 0 10px; }
 .footer-brand p { font-size: .92rem; max-width: 320px; }

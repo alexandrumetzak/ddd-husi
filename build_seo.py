@@ -501,6 +501,7 @@ def head(title, desc, canonical, schema):
   <title>{html.escape(title)}</title>
   <meta name="description" content="{html.escape(desc)}" />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1f9d55" />
   <link rel="canonical" href="{canonical}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{canonical}" />
@@ -560,6 +561,13 @@ def footer_html():
         <a href="../index.html#de-ce-noi">De ce noi</a>
         <a href="../index.html#proces">Cum lucrăm</a>
         <a href="../index.html#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="../politica-confidentialitate.html">Politică de confidențialitate</a>
+        <a href="../termeni-si-conditii.html">Termeni și condiții</a>
+        <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener">ANPC — SAL</a>
+        <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ANPC — SOL</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>

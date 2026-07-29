@@ -6,8 +6,9 @@ navLinks?.querySelectorAll('a').forEach(a =>
   a.addEventListener('click', () => navLinks.classList.remove('open'))
 );
 
-// Current year in footer
-document.getElementById('year').textContent = new Date().getFullYear();
+// Current year in footer (elementul există doar pe unele pagini)
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // Numărul de WhatsApp al firmei (format internațional, fără +, spații sau 0 inițial)
 const WHATSAPP_NUMBER = '40744913376';

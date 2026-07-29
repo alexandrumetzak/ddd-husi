@@ -8,6 +8,7 @@
   <meta name="keywords" content="dezinsectie Husi, deratizare Husi, dezinfectie Husi, DDD Moldova, deratizare Vaslui, dezinsectie Iasi, combatere gandaci, deratizare soareci, eliminare ploșnițe, firma DDD" />
   <meta name="author" content="DDD Husi" />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1f9d55" />
   <link rel="canonical" href="https://ddd-husi.ro/" />
 
   <!-- Open Graph -->
@@ -147,9 +148,9 @@
       <div class="hero-card">
         <h3>Cere o ofertă în 30 de secunde</h3>
         <form class="quick-form" id="quickForm">
-          <input type="text" name="nume" placeholder="Numele tău" required />
-          <input type="tel" name="telefon" placeholder="Telefon" required />
-          <select name="serviciu" required>
+          <input type="text" name="nume" placeholder="Numele tău" aria-label="Numele tău" autocomplete="name" required />
+          <input type="tel" name="telefon" placeholder="Telefon" aria-label="Telefon" autocomplete="tel" required />
+          <select name="serviciu" aria-label="Ce problemă ai?" required>
             <option value="" disabled selected>Ce problemă ai?</option>
             <option>Gândaci / insecte</option>
             <option>Șobolani / șoareci</option>
@@ -386,18 +387,18 @@
       </div>
       <form class="contact-form" id="contactForm">
         <div class="form-row">
-          <input type="text" name="nume" placeholder="Nume și prenume" required />
-          <input type="tel" name="telefon" placeholder="Telefon" required />
+          <input type="text" name="nume" placeholder="Nume și prenume" aria-label="Nume și prenume" autocomplete="name" required />
+          <input type="tel" name="telefon" placeholder="Telefon" aria-label="Telefon" autocomplete="tel" required />
         </div>
-        <input type="text" name="localitate" placeholder="Localitatea" />
-        <select name="serviciu" required>
+        <input type="text" name="localitate" placeholder="Localitatea" aria-label="Localitatea" autocomplete="address-level2" />
+        <select name="serviciu" aria-label="Tip serviciu" required>
           <option value="" disabled selected>Tip serviciu</option>
           <option>Dezinsecție</option>
           <option>Deratizare</option>
           <option>Dezinfecție</option>
           <option>Nu sunt sigur(ă)</option>
         </select>
-        <textarea name="mesaj" rows="4" placeholder="Descrie pe scurt problema..."></textarea>
+        <textarea name="mesaj" rows="4" placeholder="Descrie pe scurt problema..." aria-label="Descrie pe scurt problema"></textarea>
         <button type="submit" class="btn btn-primary btn-block">Trimite cererea</button>
         <p class="form-note">Sau sună direct: <a href="tel:+40744913376">0744 913 376</a></p>
       </form>
@@ -481,6 +482,13 @@
         <a href="#de-ce-noi">De ce noi</a>
         <a href="#proces">Cum lucrăm</a>
         <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="politica-confidentialitate.html">Politică de confidențialitate</a>
+        <a href="termeni-si-conditii.html">Termeni și condiții</a>
+        <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener">ANPC — SAL</a>
+        <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ANPC — SOL</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
